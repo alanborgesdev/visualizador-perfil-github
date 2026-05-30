@@ -2,7 +2,7 @@ export function renderProfile(userData, userRepos, container) {
 
   const repositoriesHTML = userRepos && userRepos.length > 0 ? userRepos.map(repo => `
     <a href="${repo.html_url}" target="_blank">
-        <div class="repository-card">    
+        <div class="repository-card">
             <h3>${repo.name}</h3>
             <div class="repository-stats">
                 <span>⭐Stars: ${repo.stargazers_count}</span>
@@ -20,7 +20,7 @@ export function renderProfile(userData, userRepos, container) {
     userData.name
   }" class="profile-avatar">
       <div class="profile-info">
-        <h2>${userData.name}</h2>
+        <h2>${userData.name || "Não possui nome cadastrado 😢."}</h2>
         <p>${userData.bio || "Não possui bio cadastrada 😢."}</p>
       </div>
     </div>
