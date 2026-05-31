@@ -25,7 +25,7 @@ Esta aplicação permite que você insira um nome de usuário do GitHub e veja a
 
 1.  **Clone o repositório:**
     ```bash
-    git clone <URL-do-seu-repositorio>
+    git clone https://github.com/alanborgesdev/visualizador-perfil-github.git
     ```
 2.  **Navegue até o diretório do projeto:**
     ```bash
